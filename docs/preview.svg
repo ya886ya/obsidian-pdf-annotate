@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PDF Annotate 桌面与平板界面示意</title>
+  <desc id="desc">桌面和平板上的 PDF 高亮、手写与页边批注示意图。工具栏按插件的真实功能顺序绘制，图中已开启可选的导出和网页章节按钮；并非真实截图。</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#17192f"/><stop offset="1" stop-color="#39305f"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="17" stdDeviation="19" flood-color="#080919" flood-opacity=".32"/></filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#fff" stroke-opacity=".05"/></pattern>
+    <!-- The toolbar uses the same Lucide icon names as the plugin's setIcon calls. -->
+    <symbol id="book-open" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14M3 18V5a2 2 0 0 1 2-2h3a4 4 0 0 1 4 4 4 4 0 0 1 4-4h3a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2h-3a4 4 0 0 0-4 4 4 4 0 0 0-4-4H5a2 2 0 0 0-2 2z"/></g></symbol>
+    <symbol id="share-2" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.7 6.6-4.4m-6.6 7 6.6 4.4"/></g></symbol>
+    <symbol id="undo-2" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5M4 9h10a6 6 0 0 1 0 12h-2"/></g></symbol>
+    <symbol id="redo-2" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 14 5-5-5-5m5 5H10a6 6 0 0 0 0 12h2"/></g></symbol>
+    <symbol id="highlighter" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 11 5 5m-7 4h12M11 3l10 10-5 5L6 8z"/></g></symbol>
+    <symbol id="pen-tool" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3zM2 22l6-6 4 3-3 3H2zM3 3l8 2 5 5-6 6-5-5z"/><circle cx="8" cy="8" r="1"/></g></symbol>
+    <symbol id="eraser" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 21-4-4a2 2 0 0 1 0-3L13 4a2 2 0 0 1 3 0l5 5a2 2 0 0 1 0 3l-9 9H7zm-2-9 7 7M12 21h9"/></g></symbol>
+    <symbol id="sticky-note" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10zM14 20v-4a2 2 0 0 1 2-2h4"/></g></symbol>
+    <symbol id="trash-2" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18m-2 0-1 14H6L5 6m3 0V4h8v2m-6 4v7m4-7v7"/></g></symbol>
+    <symbol id="sliders-horizontal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h9m4 0h3M4 17h3m4 0h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></g></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></g></symbol>
+    <symbol id="globe-2" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-3 3-4 6-4 9s1 6 4 9m0-18c3 3 4 6 4 9s-1 6-4 9"/></g></symbol>
+    <clipPath id="tablet-toolbar-clip"><rect x="861" y="223" width="259" height="40" rx="10"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" rx="30" fill="url(#bg)"/>
+  <rect width="1200" height="630" rx="30" fill="url(#grid)"/>
+  <circle cx="1060" cy="-50" r="300" fill="#a98aff" opacity=".08"/>
+  <circle cx="50" cy="600" r="280" fill="#5ac8f5" opacity=".06"/>
+  <rect x="68" y="42" width="46" height="46" rx="13" fill="#a789ff"/>
+  <path d="M82 54h16l6 6v18H82zM98 54v7h6M86 70l4 4 9-11" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g font-family="Arial, sans-serif">
+    <text x="128" y="75" fill="#fff" font-size="30" font-weight="700">PDF Annotate</text>
+    <text x="69" y="128" fill="#d6d1ed" font-size="19">Read. Mark. Write. Share.</text>
+    <rect x="928" y="47" width="200" height="36" rx="18" fill="#fff" fill-opacity=".1" stroke="#fff" stroke-opacity=".2"/>
+    <text x="948" y="70" fill="#f2edff" font-size="12" font-weight="700">DESKTOP  ·  TABLET</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="65" y="171" width="751" height="381" rx="18" fill="#ece9f6"/>
+    <path d="M83 171h715a18 18 0 0 1 18 18v38H65v-38a18 18 0 0 1 18-18z" fill="#f1eef9"/>
+    <circle cx="91" cy="199" r="5" fill="#f58990"/><circle cx="109" cy="199" r="5" fill="#f3c45f"/><circle cx="127" cy="199" r="5" fill="#79d8ab"/>
+    <rect x="160" y="187" width="250" height="23" rx="7" fill="#fff"/>
+    <text x="174" y="203" fill="#5c5971" font-family="Arial, sans-serif" font-size="12">research-paper.pdf</text>
+    <rect x="90" y="242" width="701" height="42" rx="11" fill="#fff"/>
+    <rect x="249" y="247" width="28" height="31" rx="6" fill="#9070e9"/>
+    <use href="#book-open" x="103" y="252" width="21" height="21" color="#766e8e"/>
+    <use href="#share-2" x="133" y="252" width="21" height="21" color="#766e8e"/>
+    <use href="#undo-2" x="163" y="252" width="21" height="21" color="#a6a1b1"/>
+    <use href="#redo-2" x="193" y="252" width="21" height="21" color="#a6a1b1"/>
+    <use href="#highlighter" x="223" y="252" width="21" height="21" color="#766e8e"/>
+    <use href="#pen-tool" x="253" y="252" width="21" height="21" color="#fff"/>
+    <use href="#eraser" x="283" y="252" width="21" height="21" color="#766e8e"/>
+    <use href="#sticky-note" x="313" y="252" width="21" height="21" color="#766e8e"/>
+    <use href="#trash-2" x="343" y="252" width="21" height="21" color="#766e8e"/>
+    <circle cx="390" cy="263" r="9" fill="#ffd54a" stroke="#292638" stroke-width="2"/>
+    <circle cx="411" cy="263" r="9" fill="#7bed9f"/><circle cx="432" cy="263" r="9" fill="#54a0ff"/>
+    <circle cx="453" cy="263" r="9" fill="#ff9ff3"/><circle cx="474" cy="263" r="9" fill="#ff6b6b"/>
+    <circle cx="495" cy="263" r="9" fill="#000"/>
+    <rect x="516" y="260" width="75" height="6" rx="3" fill="#e4e0ee"/>
+    <circle cx="540" cy="263" r="10" fill="#9275ed" stroke="#fff" stroke-width="3"/>
+    <text x="597" y="267" fill="#777188" font-family="Arial, sans-serif" font-size="12">3</text>
+    <rect x="617" y="249" width="134" height="28" rx="6" fill="#faf9fc" stroke="#e5e2eb"/>
+    <text x="627" y="267" fill="#a19baa" font-family="Arial, sans-serif" font-size="11">Search text...</text>
+    <use href="#search" x="729" y="256" width="14" height="14" color="#817a91"/>
+    <use href="#globe-2" x="762" y="252" width="21" height="21" color="#766e8e"/>
+    <rect x="89" y="298" width="484" height="231" rx="5" fill="#fff"/>
+    <text x="123" y="334" fill="#302d43" font-family="Arial, sans-serif" font-size="20" font-weight="700">Ideas worth keeping</text>
+    <g fill="#cbc9d3"><rect x="123" y="354" width="322" height="6" rx="3"/><rect x="123" y="370" width="381" height="6" rx="3"/><rect x="123" y="402" width="372" height="6" rx="3"/><rect x="123" y="418" width="285" height="6" rx="3"/></g>
+    <rect x="123" y="386" width="345" height="6" rx="3" fill="#f6d66c"/>
+    <path d="M159 458c32-28 58 30 94-5 34-32 49 28 78 3 17-15 27-15 43-6" fill="none" stroke="#7564e4" stroke-width="6" stroke-linecap="round"/>
+    <rect x="589" y="317" width="190" height="100" rx="12" fill="#fff" stroke="#e6e0f4"/>
+    <rect x="589" y="317" width="190" height="26" rx="12" fill="#fff1ba"/>
+    <text x="604" y="335" fill="#65543a" font-family="Arial, sans-serif" font-size="11" font-weight="700">NOTE 01</text>
+    <text x="604" y="367" fill="#39364a" font-family="Arial, sans-serif" font-size="12">A useful point to revisit.</text>
+    <rect x="604" y="381" width="148" height="5" rx="2.5" fill="#d8d5e1"/><rect x="604" y="393" width="112" height="5" rx="2.5" fill="#d8d5e1"/>
+    <path d="M470 389c53-5 72-38 119-34" fill="none" stroke="#c6a44b" stroke-width="2" stroke-dasharray="5 5"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="834" y="153" width="313" height="418" rx="29" fill="#151827" stroke="#9089a9" stroke-width="4"/>
+    <rect x="847" y="166" width="287" height="392" rx="18" fill="#f8f7fb"/>
+    <path d="M865 166h251a18 18 0 0 1 18 18v25H847v-25a18 18 0 0 1 18-18z" fill="#eeeaf6"/>
+    <text x="864" y="193" fill="#4a4560" font-family="Arial, sans-serif" font-size="11" font-weight="700">research-paper.pdf</text>
+    <rect x="860" y="222" width="261" height="42" rx="11" fill="#fff" stroke="#e7e4f0"/>
+    <g clip-path="url(#tablet-toolbar-clip)">
+      <rect x="1064" y="227" width="31" height="32" rx="7" fill="#9070e9"/>
+      <use href="#book-open" x="869" y="232" width="22" height="22" color="#766e8e"/>
+      <use href="#share-2" x="909" y="232" width="22" height="22" color="#766e8e"/>
+      <use href="#undo-2" x="949" y="232" width="22" height="22" color="#a6a1b1"/>
+      <use href="#redo-2" x="989" y="232" width="22" height="22" color="#a6a1b1"/>
+      <use href="#highlighter" x="1029" y="232" width="22" height="22" color="#766e8e"/>
+      <use href="#pen-tool" x="1069" y="232" width="22" height="22" color="#fff"/>
+      <use href="#eraser" x="1109" y="232" width="22" height="22" color="#766e8e"/>
+    </g>
+    <rect x="861" y="279" width="259" height="263" rx="3" fill="#fff"/>
+    <text x="881" y="313" fill="#393449" font-family="Arial, sans-serif" font-size="16" font-weight="700">Notes on the page</text>
+    <g fill="#d5d2dc"><rect x="881" y="336" width="202" height="5" rx="2.5"/><rect x="881" y="350" width="220" height="5" rx="2.5"/><rect x="881" y="378" width="213" height="5" rx="2.5"/></g>
+    <rect x="881" y="364" width="182" height="5" rx="2.5" fill="#f7dc72"/>
+    <path d="M894 447c24-47 48 47 76-4 22-39 44 35 74-1 11-13 29-12 43-18" fill="none" stroke="#7d69e8" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="1089" cy="453" r="14" fill="none" stroke="#635b77" stroke-width="2" stroke-dasharray="3 3"/>
+  </g>
+  <text x="69" y="599" fill="#bdb8d8" font-family="Arial, sans-serif" font-size="13">ANNOTATE ACROSS SCREENS</text>
+  <text x="1052" y="599" fill="#bdb8d8" font-family="Arial, sans-serif" font-size="13">v0.2.39</text>
+</svg>

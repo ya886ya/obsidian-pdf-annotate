@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260" role="img" aria-labelledby="title desc">
+  <title id="title">PDF 批注保存与导出流程</title>
+  <desc id="desc">原始 PDF 保持不变，插件批注单独保存，导出时生成可分享的 PDF。</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f8f6ff"/><stop offset="1" stop-color="#f1f7ff"/></linearGradient></defs>
+  <rect width="1100" height="260" rx="24" fill="url(#bg)"/>
+  <g font-family="Arial, sans-serif">
+    <rect x="49" y="42" width="254" height="157" rx="18" fill="#fff" stroke="#ded9f4" stroke-width="2"/>
+    <rect x="80" y="65" width="57" height="69" rx="6" fill="#ede6ff"/>
+    <path d="M95 84h28m-28 12h28m-28 12h22" stroke="#8c6ee8" stroke-width="5" stroke-linecap="round"/>
+    <text x="157" y="92" fill="#302d45" font-size="19" font-weight="700">原始 PDF</text>
+    <text x="157" y="119" fill="#77718b" font-size="14">保持清晰、可搜索</text>
+    <text x="80" y="170" fill="#7d6ec0" font-size="13" font-weight="700">原文件不修改</text>
+    <path d="M319 120h58m-7-8 12 8-12 8" fill="none" stroke="#a9a0d3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="394" y="42" width="300" height="157" rx="18" fill="#fff" stroke="#ded9f4" stroke-width="2"/>
+    <circle cx="433" cy="88" r="15" fill="#ffdf77"/>
+    <path d="M417 133c16-25 29 14 48-12" fill="none" stroke="#8369e7" stroke-width="5" stroke-linecap="round"/>
+    <rect x="491" y="76" width="170" height="70" rx="9" fill="#f5f2fd"/>
+    <text x="509" y="103" fill="#302d45" font-size="19" font-weight="700">插件批注</text>
+    <text x="509" y="128" fill="#77718b" font-size="14">独立保存 · 随时编辑</text>
+    <text x="420" y="170" fill="#7d6ec0" font-size="13" font-weight="700">高亮 · 手写 · 文字批注</text>
+    <path d="M710 120h58m-7-8 12 8-12 8" fill="none" stroke="#a9a0d3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="786" y="42" width="265" height="157" rx="18" fill="#2d2855"/>
+    <rect x="819" y="67" width="58" height="72" rx="6" fill="#fff"/>
+    <path d="M832 88h31m-31 12h31m-31 12h23" stroke="#c9c3e7" stroke-width="4" stroke-linecap="round"/>
+    <path d="m842 120 7-8 7 6 6-10" fill="none" stroke="#856be6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="897" y="92" fill="#fff" font-size="19" font-weight="700">导出 PDF</text>
+    <text x="897" y="119" fill="#d3cdec" font-size="14">批注可分享</text>
+    <text x="819" y="170" fill="#d6c7ff" font-size="13" font-weight="700">保留原文矢量质量</text>
+    <text x="550" y="233" text-anchor="middle" fill="#827d9b" font-size="13">PDF 与批注分别保存，只有导出时生成分享文件</text>
+  </g>
+</svg>

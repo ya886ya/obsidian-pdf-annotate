@@ -1193,3 +1193,319 @@
   mix-blend-mode: multiply;
 }
 
+/* 平板 PDF：工具栏独立悬浮，避免挤压 Obsidian 原生页码/缩放控件。 */
+.da-mobile-pdf-view .da-mobile-controls {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  right: 8px;
+  width: auto;
+  max-width: calc(100% - 16px);
+  min-height: 48px;
+  margin: 0;
+  padding: 4px 6px;
+  z-index: 60;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  background: var(--background-primary, #fff);
+  border: 1px solid var(--background-modifier-border, #ccc);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+}
+.da-mobile-pdf-view .da-mobile-controls > * {
+  flex: none;
+}
+.da-mobile-pdf-view .da-mobile-controls .da-native-tool {
+  min-width: 40px;
+  min-height: 40px;
+  padding: 8px;
+}
+.da-mobile-pdf-view .da-mobile-controls .da-native-swatch {
+  width: 26px;
+  height: 26px;
+}
+.da-mobile-pdf-view .da-mobile-controls .da-mobile-width-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  min-width: 60px;
+  padding: 6px 9px;
+}
+.da-mobile-width-button-value {
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.da-mobile-width-panel[hidden] {
+  display: none !important;
+}
+.da-mobile-width-panel {
+  position: fixed;
+  z-index: 100000;
+  box-sizing: border-box;
+  width: min(340px, calc(100vw - 16px));
+  padding: 16px;
+  border: 1px solid var(--background-modifier-border, #d5d5d5);
+  border-radius: 20px;
+  background: var(--background-primary, #fff);
+  color: var(--text-normal, #222);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .22);
+}
+.da-mobile-width-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.da-mobile-width-heading .da-native-width-val {
+  font-size: 16px;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-normal, #222);
+  background: transparent;
+}
+.da-mobile-width-stroke {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76px;
+  margin-bottom: 18px;
+  border-radius: 13px;
+  background: var(--background-secondary, #f2f2f2);
+}
+.da-mobile-width-stroke svg {
+  width: 90%;
+  height: 56px;
+}
+.da-mobile-width-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.da-mobile-width-row > button {
+  flex: 0 0 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 23px;
+  line-height: 1;
+  color: var(--interactive-accent, #6d5df5);
+  background: var(--background-secondary, #eee);
+}
+.da-mobile-width-panel .da-native-width-wrap {
+  display: block;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 44px;
+  margin: 0;
+  position: relative;
+}
+.da-mobile-width-track {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 50%;
+  height: 4px;
+  transform: translateY(-50%);
+  border-radius: 2px;
+  background: var(--background-modifier-border, #ccc);
+  pointer-events: none;
+}
+.da-mobile-width-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--interactive-accent, #6d5df5);
+}
+.da-mobile-width-thumb {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--background-primary, #fff);
+  border-radius: 50%;
+  background: var(--background-primary, #fff);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .28);
+}
+.da-mobile-width-panel input.da-native-width[type="range"] {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  display: block !important;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: 0;
+  touch-action: none;
+}
+.da-mobile-width-panel input.da-native-width::-webkit-slider-runnable-track {
+  height: 4px;
+  background: transparent;
+}
+.da-mobile-width-panel input.da-native-width::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+}
+.da-mobile-pdf-view .da-mobile-controls .da-native-search-input {
+  width: 100px;
+  height: 36px;
+}
+.da-mobile-pdf-view .da-native-pen-canvas {
+  touch-action: pan-x pan-y pinch-zoom;
+}
+.da-mobile-pdf-view .da-finger-draw .da-native-pen-canvas {
+  touch-action: none;
+}
+.da-mobile-pdf-view .da-native-box-head,
+.da-mobile-pdf-view .da-native-box-resize {
+  touch-action: none;
+}
+.da-mobile-pdf-view .da-native-box-head {
+  min-height: 32px;
+}
+.da-mobile-pdf-view .da-native-box-flip,
+.da-mobile-pdf-view .da-native-box-del,
+.da-mobile-pdf-view .da-native-box-ref {
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.da-mobile-pdf-view .da-native-box-resize {
+  width: 28px;
+  height: 28px;
+}
+.da-mobile-pdf-view .da-native-box-text {
+  font-size: 16px;
+}
+.da-mobile-selection-pop {
+  max-width: calc(100vw - 16px);
+  max-height: 45vh;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+.da-mobile-selection-pop .da-native-pop-main,
+.da-mobile-selection-pop .da-native-pop-sub {
+  flex-wrap: wrap;
+}
+.da-web-chapter-markers {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+}
+.da-web-chapter-marker {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 50%;
+  color: var(--text-on-accent, #fff);
+  background: var(--interactive-accent, #6d5df5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+  pointer-events: auto;
+  cursor: pointer;
+}
+.da-web-preview {
+  position: fixed;
+  z-index: 1000;
+  width: min(480px, calc(100vw - 16px));
+  height: min(560px, calc(100vh - 16px));
+  display: flex;
+  flex-direction: column;
+  background: var(--background-primary, #fff);
+  border: 1px solid var(--background-modifier-border, #ccc);
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .25);
+  overflow: hidden;
+}
+.da-web-preview.is-expanded {
+  inset: 8px !important;
+  width: calc(100vw - 16px);
+  height: calc(100vh - 16px);
+}
+.da-web-preview-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--background-modifier-border, #ccc);
+}
+.da-web-preview-header span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.da-web-preview-header button,
+.da-web-preview-header a {
+  flex: none;
+  font-size: 12px;
+}
+.da-web-preview iframe {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background: #fff;
+}
+.da-web-source-dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: min(80vh, 760px);
+}
+.da-web-source-dialog > input,
+.da-web-source-row input {
+  width: 100%;
+  min-height: 36px;
+}
+.da-web-source-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.da-web-source-manual {
+  min-height: 0;
+  overflow-y: auto;
+}
+.da-web-source-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) minmax(160px, 2fr);
+  gap: 8px;
+  align-items: center;
+  margin: 8px 0;
+}
+.da-web-source-status {
+  min-height: 1.4em;
+}
+.da-web-source-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .da-mobile-pdf-view .da-mobile-controls .da-native-search-input {
+    width: 76px;
+  }
+  .da-web-source-row {
+    grid-template-columns: 1fr;
+  }
+}
+
