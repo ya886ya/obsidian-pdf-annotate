@@ -37,7 +37,7 @@
 1. 在 Obsidian 社区插件市场安装 **BRAT**（搜 "BRAT"）。
 2. 打开 BRAT 设置 → `Add a beta plugin by its GitHub repository` → 填入：
    ```
-   github:ya886ya/obsidian-pdf-annotate
+   https://github.com/ya886ya/obsidian-pdf-annotate
    ```
 3. 添加后启用 **PDF批注 PDF Annotate**，重启 Obsidian 生效。
 4. **以后更新**：仓库推送新版本后，回到 BRAT 列表里该插件项点 **Update**（或开启 BRAT 自动更新）。BRAT 会拉取 `main` 分支根目录最新的 `main.js` / `manifest.json` / `styles.css` / `versions.json` 并覆盖本地，**无需重新下载安装**。更新后若 Obsidian 没自动重载，去「设置 → 第三方插件」把该插件关一下再开（或重启 Obsidian）即可。
